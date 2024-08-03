@@ -1,0 +1,31 @@
+# MacOS specific files
+.DS_Store
+
+# Thumbnail cache files
+._*
+
+# Temporary files
+*.tmp
+*.log
+
+# Ignore compiled files
+*.o
+*.obj
+*.dll
+*.exe
+*.out
+
+# Ignore OS generated files
+Thumbs.db
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore any secret configuration files
+*.env
