@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap");
+
+.small-image {
+  width: 200px;
+  height: auto;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Freckle Face", system-ui;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(30, 131, 255);
+  background-image: url(img/image.png);
+  background-image: stretch;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Freckle Face", system-ui;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(30, 131, 255);
+  background-image: url("img/image.png"); /* Ensure the path is correct */
+  background-size: cover; /* Ensure the background image covers the viewport */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the background image */
+}
+
+body,
+.container,
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(30, 131, 255);
+}
+
+.container {
+  /* background: #fff; */
+  background-color: rgba(255, 255, 255, 0.01);
+  /* background-color: white; */
+  width: 440px;
+  border-radius: 10px;
+  padding: 30px 30px 38px;
+  flex-direction: column;
+}
+
+/* .container .img {
+  max-width: 103px;
+} */
+
+.container h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin: 30px 0;
+  color: rgb(67, 252, 147);
+}
+
+.container .content {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container .content.disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.content .column {
+  border: 1px solid rgb(67, 252, 147);
+  border-radius: 10px;
+  padding: 0 10px;
+  text-align: center;
+  width: calc(33.33% - 10px); /* Adjusted calculation for equal spacing */
+  margin: 0 5px; /* Added margin for spacing between columns */
+}
+
+.column select {
+  outline: none;
+  border: none;
+  height: 53px;
+  font-weight: 500; /* Makes the font bold */
+  font-family: "Freckle Face", system-ui;
+
+  width: 100%;
+  color: rgb(67, 252, 147);
+  text-align: center;
+  font-size: 25px;
+  -webkit-appearance: none; /* Removes default styling in Safari */
+  appearance: none; /* Removes default styling in other browsers */
+  background-color: transparent; /* Ensures no background color */
+}
+
+.container button {
+  outline: none;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 80px;
+  padding: 17px 0;
+  border-radius: 5px;
+  color: rgb(67, 252, 147);
+  font-family: "Freckle Face", system-ui;
+  background-color: transparent;
+  -webkit-appearance: none; /* Removes default styling in Safari */
+  appearance: none; /* Removes default styling in other browsers */
+}
